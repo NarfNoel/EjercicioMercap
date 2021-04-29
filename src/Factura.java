@@ -1,14 +1,17 @@
+import java.time.DayOfWeek;
+import java.time.Month;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
 public class Factura {
-
     double abonoMensualBasico;
+    Month mes;
     List<Llamada> llamadas;
 
-    Factura(double abonoMensualBasico,List<Llamada> llamadas){
+    Factura(Month mes, double abonoMensualBasico,List<Llamada> llamadas){
         this.abonoMensualBasico=abonoMensualBasico;
+        this.mes=mes;
         this.llamadas=llamadas;
     }
 

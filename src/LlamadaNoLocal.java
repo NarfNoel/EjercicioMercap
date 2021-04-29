@@ -1,3 +1,4 @@
+import java.time.DayOfWeek;
 import java.time.LocalTime;
 
 public class LlamadaNoLocal extends Llamada { // Esta clase contiene a las llamadas Nacionales no locales y a las llamadas Internacionales. Como la consigna no las distingue y no
@@ -6,7 +7,7 @@ public class LlamadaNoLocal extends Llamada { // Esta clase contiene a las llama
     String destino; // considero que el destino es solamente relevante para las llamadas no locales. Será responsabilidad de la UI o del sistema de entrada de datos cómo se instancian
                     // las clases concretas de Llamada.
 
-    LlamadaNoLocal (LocalTime horaInicio, int duracion, DIASEMANA dia){
+    LlamadaNoLocal (LocalTime horaInicio, int duracion, DayOfWeek dia){
         this.horaInicio = horaInicio;
         this.duracion = duracion;
         this.dia = dia;

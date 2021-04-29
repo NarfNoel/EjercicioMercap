@@ -6,7 +6,7 @@ public class LlamadaLocal extends Llamada{
                                         // se actualicen así. Podrían ser variables de entorno también.
     private final double precioBarato = 0.1;
 
-    LlamadaLocal (LocalTime horaInicio, int duracion, DIASEMANA dia){
+    LlamadaLocal (LocalTime horaInicio, int duracion, DayOfWeek dia){
         this.horaInicio = horaInicio;
         this.duracion = duracion;
         this.dia = dia;
@@ -28,7 +28,7 @@ public class LlamadaLocal extends Llamada{
     }
 
     private boolean EsFinDeSemana() {
-        return dia ==DIASEMANA.SABADO || dia ==DIASEMANA.DOMINGO;
+        return dia ==DayOfWeek.SATURDAY || dia ==DayOfWeek.SUNDAY;
     }
 
 }
