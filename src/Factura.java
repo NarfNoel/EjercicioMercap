@@ -1,6 +1,5 @@
 import java.time.Month;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.stream.Stream;
 
 public class Factura {
@@ -42,7 +41,7 @@ public class Factura {
         llamadas.add(llamadas.size(),llamada);
     }
 
-    public List<Llamada> getLlamadas() {
+    public ArrayList<Llamada> getLlamadas() {
         return llamadas;
     }
 
