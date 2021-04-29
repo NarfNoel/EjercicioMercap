@@ -2,7 +2,7 @@ import java.time.DayOfWeek;
 import java.time.LocalTime;
 
 public class LlamadaNoLocal extends Llamada { // Esta clase contiene a las llamadas Nacionales no locales y a las llamadas Internacionales. Como la consigna no las distingue y no
-    //parece haber razón para distinguirlas y hacerlas polimórficas, se unen en esta clase. S
+    //parece haber razón para distinguirlas y hacerlas polimórficas, se unen en esta clase.
 
     String destino; // considero que el destino es solamente relevante para las llamadas no locales. Será responsabilidad de la UI o del sistema de entrada de datos cómo se instancian
                     // las clases concretas de Llamada.
